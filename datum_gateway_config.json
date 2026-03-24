@@ -1,0 +1,31 @@
+{
+    "bitcoind": {
+        "rpcurl": "http://127.0.0.1:8332", 
+        "rpcuser": "your_rpc_user",
+        "rpcpassword": "your_rpc_password",
+        "zmq_hashblock_url": "tcp://bitcoind:28332",
+        "work_update_seconds": 40
+    },
+    "stratum": {
+        "listen_addr": "0.0.0.0",
+        "listen_port": 3333,
+        "max_clients": 1024,
+        "max_threads": 8,
+        "vardiff_min": 16384,
+        "vardiff_target_shares_min": 6
+    },
+    "mining": {
+        "pool_address": "bc1q_your_solo_mining_payout_address_here",
+        "coinbase_tag_primary": "Datum",
+        "coinbase_tag_secondary": "Solo"
+    },
+    "api": {
+        "listen_addr": "0.0.0.0",
+        "listen_port": 7152
+    },
+    "logger": {
+        "log_to_console": true,
+        "log_level_console": 1,
+        "log_to_file": false
+    }
+}
